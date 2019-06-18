@@ -1,0 +1,15 @@
+<?php
+use Drupal\Core\Routing\RouteMatchInterface;
+/**
+* Implements hook_help().
+*/
+function libros_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        case 'help.page.libros':
+            $output = '';
+            $output .= '<h3>' . t('Acerca de Modulo Libros EET') . '</h3>';
+            $output .= '<p>' . t('Modulo que Permite la Gestion de Libros.') . '</p>';
+            return $output;
+        default:
+    }
+}

@@ -1,0 +1,7 @@
+libros.new_form:
+  path: '/libros/new'
+  defaults:
+    _form: '\Drupal\libros\Form\LibrosNewForm'
+    _title: 'Formulario Libros'
+  requirements:
+    _permission: 'administer site configuration'
